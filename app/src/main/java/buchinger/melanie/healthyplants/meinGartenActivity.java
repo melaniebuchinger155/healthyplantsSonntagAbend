@@ -60,10 +60,17 @@ public class meinGartenActivity extends AppCompatActivity {
         moveTaskToBack(true);
     }
 
-    public void onButtonClick(View v) {
+    public void onClickaddplantsbtn(View v) {
         Intent myIntent = new Intent(getBaseContext(), addplantsActivity.class);
         startActivity(myIntent);
     }
+
+
+    public void onClicklexikonbtn(View v) {
+        Intent myIntent = new Intent(getBaseContext(), ListMainActivity.class);
+        startActivity(myIntent);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
